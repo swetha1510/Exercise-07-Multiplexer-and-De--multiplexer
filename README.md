@@ -109,8 +109,8 @@ endmodule
 ![demuxsimul](https://user-images.githubusercontent.com/120623583/215271590-2265abab-30b1-4f29-aa08-83cbd06c6345.jpg)
 
 ### TRUTH TABLE 
-### Multiplexer![muxtruth](https://user-images.githubusercontent.com/120623583/215271558-310795af-c2ff-4848-a7e1-98cfcdf5f819.jpg)
-
+### Multiplexer
+![muxtruth](https://user-images.githubusercontent.com/120623583/215271558-310795af-c2ff-4848-a7e1-98cfcdf5f819.jpg)
 
 ### Demultiplexer
 ![demuxtruth](https://user-images.githubusercontent.com/120623583/215271564-bb5090a2-636b-4d4e-b498-6fab9eef9378.jpg)

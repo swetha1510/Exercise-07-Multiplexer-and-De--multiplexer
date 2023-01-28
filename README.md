@@ -96,21 +96,25 @@ endmodule
 ### OUTPUT
 ### RTL LOGIC  
 ### Multiplexer
-![images](MultiplexerRTL.png)
+![rtlmux](https://user-images.githubusercontent.com/120623583/215271487-9db88740-1c7d-46d6-afff-b63e87bada7f.jpg)
+
 ### Demultiplexer
-![images](DemuxRTL.png)
+![demuxrtl](https://user-images.githubusercontent.com/120623583/215271502-38eaca25-6862-44f7-9055-be82015d598e.jpg)
 
 ### TIMING DIGRAMS 
 ### Multiplexer
-![images](MultiplexerSimulation.png)
+![muxsim](https://user-images.githubusercontent.com/120623583/215271581-c01e7db9-f445-42d0-a5c7-641113fda5b3.jpg)
+
 ### Demultiplexer
-![images](DemuxSimulation.png)
+![demuxsimul](https://user-images.githubusercontent.com/120623583/215271590-2265abab-30b1-4f29-aa08-83cbd06c6345.jpg)
 
 ### TRUTH TABLE 
-### Multiplexer
-![images](MultiplexerTT.png)
+### Multiplexer![muxtruth](https://user-images.githubusercontent.com/120623583/215271558-310795af-c2ff-4848-a7e1-98cfcdf5f819.jpg)
+
+
 ### Demultiplexer
-![images](DemultiplexerTT.png)
+![demuxtruth](https://user-images.githubusercontent.com/120623583/215271564-bb5090a2-636b-4d4e-b498-6fab9eef9378.jpg)
+
 
 ### RESULTS 
 Thus the Multiplexer and Demultiplexer circuits are designed and the truth table is verified using quartus software

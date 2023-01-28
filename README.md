@@ -1,7 +1,13 @@
 # Exercise-07-Multiplexer-and-De-multiplexer
-### AIM: To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+### AIM: 
+To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
+
+### HARDWARE REQUIRED:  – 
+PC, Cyclone II , USB flasher
+
+### SOFTWARE REQUIRED:   
+Quartus prime
+
 ### THEORY 
 
 ## What are Multiplexer and Demultiplexer?
@@ -47,42 +53,64 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
-
-
+### 1.Using OR Gate and wires construct 4:1 Multiplexer
+### 2.Repeat the same steps to construct 1:4 Demultiplexer
+### 3.Find RTL Logic and Timing diagram for both Multiplexer and Demultiplexer
+### 4.End the program
 
 ### PROGRAM 
-/*
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: SWETHA P
+RegisterNumber:  22008542
 
+4:1 Multiplexer
 
+module mul(a,b,c,d,s0,s1,y);
+input a,b,c,d,s0,s1;
+output y;
+wire p,q,r,s,s0c,s1c;
+not(s0c,s0);
+not(s1c,s1);
+and(p,s0c,s1c,a);
+and(q,s0c,s1,b);
+and(r,s0,s1c,c);
+and(s,s0,s1,d);
+or(y,p,q,r,s);
+endmodule
 
+Demultiplexer
 
+module demux(y0,y1,y2,y3,s0,s1,i);
+input s0,s1,i;
+output y0,y1,y2,y3;
+wire s0c,s1c;
+nor(s0c,s0);
+nor(s1c,s1);
+and(y0,i,s0c,s1c);
+and(y1,i,s0c,s1);
+and(y2,i,s0,s1c);
+and(y3,i,s0,s1);
+endmodule
 
-
+### OUTPUT
 ### RTL LOGIC  
+### Multiplexer
+![images](MultiplexerRTL.png)
+### Demultiplexer
+![images](DemuxRTL.png)
 
-
-
-
-
-
-
-
-### TIMING DIGRAMS  
-
-
-
-
+### TIMING DIGRAMS 
+### Multiplexer
+![images](MultiplexerSimulation.png)
+### Demultiplexer
+![images](DemuxSimulation.png)
 
 ### TRUTH TABLE 
-
-
-
-
-
+### Multiplexer
+![images](MultiplexerTT.png)
+### Demultiplexer
+![images](DemultiplexerTT.png)
 
 ### RESULTS 
+Thus the Multiplexer and Demultiplexer circuits are designed and the truth table is verified using quartus software
